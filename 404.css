@@ -1,0 +1,53 @@
+header, body, section, footer, article{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header{
+	text-align: left;
+    font-family: 'Inconsolata', monospace;}
+
+h1{
+	font-family: 'Monda', sans-serif;
+	font-size: 40px;
+}
+
+p{
+	font-family: 'Space Mono', sans-serif;
+  font-size: 1.2rem;
+}
+
+.grid-container {
+   display: inline-grid;
+   grid-template-columns: repeat(2 , 2fr);
+   justify-content: center;
+    }
+.yipyip{
+text-align: center;
+}
+
+
+footer{
+	text-align: center;
+}
+
+button{
+  font-family: 'Monda', sans-serif;
+	border:none;
+	background-color: #212121;
+	color: white;
+	font-size: 16px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+
+  .grid-container{
+   display: grid;
+   grid-template-columns: auto;
+   scale {object-fit: scale-down;}
+  }
+}
